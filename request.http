@@ -1,0 +1,33 @@
+###buscar
+GET http://localhost:3000/api/empleados HTTP/1.1
+Content-Type: application/json
+
+###Insertar prdocuto 
+POST http://localhost:3000/api/empleados HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Joesefito",
+    "puesto": "Developer jr",
+    "departamento":"computer science",
+    "salario": 22000
+}
+
+
+###Consutlar x ID
+GET http://localhost:3000/api/empleados/605e364499e68e0dd48a6ca2 HTTP/1.1
+
+###Actualizar por ID
+PUT http://localhost:3000/api/empleados/605e364499e68e0dd48a6ca2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Joesefito El más verga",
+    "puesto": "Developer jr",
+    "departamento":"computer science",
+    "salario": 22000
+}
+
+###Eliminar por ID
+DELETE  http://localhost:3000/api/empleados/605ce47dc4caeb10e417ec18 HTTP/1.1
+Content-Type: application/json
